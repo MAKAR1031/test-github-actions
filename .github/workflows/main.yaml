@@ -13,34 +13,34 @@ jobs:
     steps:
       - name: Print info
         run: |
-          echo Action: {{ github.action }}
-          echo Action path: {{ github.action_path }}
-          echo Action ref: {{ github.action_ref }}
-          echo Action repository: {{ github.action_repository }}
-          echo Action status: {{ github.action_status }}
-          echo Actor: {{ github.actor }}
-          echo Api URL: {{ github.api_url }}
-          echo Base ref: {{ github.base_ref }}
-          echo Env: {{ github.env }}
-          echo Event name: {{ github.event_name }}
-          echo Event path: {{ github.event_path }}
-          echo GraphQL URL: {{ github.graphql_url }}
-          echo Head ref: {{ github.head_ref }}
-          echo Job: {{ github.job }}
-          echo Ref: {{ github.ref }}
-          echo Ref name: {{ github.ref_name }}
-          echo Ref protected: {{ github.ref_protected }}
-          echo Ref type: {{ github.ref_type }}
-          echo Path: {{ github.path }}
-          echo Repository: {{ github.repository }}
-          echo Repository owner: {{ github.repository_owner }}
-          echo Repository URL: {{ github.repositoryUrl }}
-          echo Retention days: {{ github.retention_days }}
-          echo Run id: {{ github.run_id }}
-          echo Run number: {{ github.run_number }}
-          echo Run attempt: {{ github.run_attempt }}
-          echo Server URL: {{ github.server_url }}
-          echo Sha: {{ github.sha }}
-          echo Triggered actor {{ github.triggering_actor }}
-          echo Workflow {{ github.workflow }}
-          echo Workspace {{ github.workspace }}
+          echo Action: ${{ github.action }}
+          echo Action path: ${{ github.action_path }}
+          echo Action ref: ${{ github.action_ref }}
+          echo Action repository: ${{ github.action_repository }}
+          echo Action status: ${{ github.action_status }}
+          echo Actor: ${{ github.actor }}
+          echo Api URL: ${{ github.api_url }}
+          echo Base ref: ${{ github.base_ref }}
+          echo Env: ${{ github.env }}
+          echo Event name: ${{ github.event_name }}
+          echo Event path: ${{ github.event_path }}
+          echo GraphQL URL: ${{ github.graphql_url }}
+          echo Head ref: ${{ github.head_ref }}
+          echo Job: ${{ github.job }}
+          echo Ref: ${{ github.ref }}
+          echo Ref name: ${{ github.ref_name }}
+          echo Ref protected: ${{ github.ref_protected }}
+          echo Ref type: ${{ github.ref_type }}
+          echo Path: ${{ github.path }}
+          echo Repository: ${{ github.repository }}
+          echo Repository owner: ${{ github.repository_owner }}
+          echo Repository URL: ${{ github.repositoryUrl }}
+          echo Retention days: ${{ github.retention_days }}
+          echo Run id: ${{ github.run_id }}
+          echo Run number: ${{ github.run_number }}
+          echo Run attempt: ${{ github.run_attempt }}
+          echo Server URL: ${{ github.server_url }}
+          echo Sha: ${{ github.sha }}
+          echo Triggered actor ${{ github.triggering_actor }}
+          echo Workflow ${{ github.workflow }}
+          echo Workspace ${{ github.workspace }}
