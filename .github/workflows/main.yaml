@@ -1,14 +1,16 @@
 name: Main
 on: push
 jobs:
-  Test:
+  messages:
+    name: Messages
     runs-on: ubuntu-latest
     steps:
       - name: Hello
         run: 'echo Hello!'
       - name: Goodbye
         run: 'echo Goodbye'
-  Info:
+  context_github:
+    name: Context 'githuib'
     runs-on: ubuntu-latest
     steps:
       - name: Print info
