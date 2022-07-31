@@ -6,3 +6,5 @@ jobs:
     steps:
       - name: Hello
         run: 'echo Hello!'
+      - name: Goodbye
+        run: 'echo Goodbye'
