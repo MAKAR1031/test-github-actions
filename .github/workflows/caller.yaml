@@ -2,6 +2,6 @@ name: Caller
 on: push
 jobs:
   reusable_workflow_job:
-    uses: makar1031/test-github-actions/.github/workflows/inputs.yaml@master
+    uses: ./.github/workflows/inputs.yaml
     with:
       name: ${{ github.actor }}
