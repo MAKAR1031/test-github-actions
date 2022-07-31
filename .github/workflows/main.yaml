@@ -59,7 +59,7 @@ jobs:
     name: Reusable workflow
     runs-on: ubuntu-latest
     steps:
-      - uses: makar1031/test-github-actions/.github/workflows/inputs.yaml@latest
+      - uses: makar1031/test-github-actions/.github/workflows/inputs.yaml
         with:
           name: ${{ github.actor }}
   goodbye:
