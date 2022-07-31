@@ -55,13 +55,6 @@ jobs:
           echo Runner name: ${{ runner.name }}
           echo Runner operating system: ${{ runner.os }}
           echo Runner architecture: ${{ runner.arch }}
-  reusable_workflow:
-    name: Reusable workflow
-    runs-on: ubuntu-latest
-    steps:
-      - uses: makar1031/test-github-actions/.github/workflows/inputs.yaml@master
-        with:
-          name: ${{ github.actor }}
   goodbye:
     name: Goodbye
     runs-on: ubuntu-latest
