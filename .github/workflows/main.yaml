@@ -59,7 +59,7 @@ jobs:
     name: Reusable workflow
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/workflows/inputs
+      - uses: ./.github/workflows/inputs.yaml
         with:
           name: ${{ github.actor }}
   goodbye:
