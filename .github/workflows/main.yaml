@@ -1,17 +1,16 @@
 name: Main
 on: push
 jobs:
-  messages:
-    name: Messages
+  hello:
+    name: Hello
     runs-on: ubuntu-latest
     steps:
-      - name: Hello
+      - name: print message
         run: 'echo Hello!'
-      - name: Goodbye
-        run: 'echo Goodbye'
   context_github:
     name: Context 'githuib'
     runs-on: ubuntu-latest
+    needs: [ hello ]
     steps:
       - name: Print info
         run: |
@@ -46,3 +45,10 @@ jobs:
           echo Triggered actor ${{ github.triggering_actor }}
           echo Workflow ${{ github.workflow }}
           echo Workspace ${{ github.workspace }}
+  goodbye:
+    name: Goodbye
+    runs-on: ubuntu-latest
+    needs: [ context_github ]
+    steps:
+      - name: Print message
+        run: 'echo Goodbye'
