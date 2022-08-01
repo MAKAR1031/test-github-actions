@@ -8,7 +8,7 @@ jobs:
       - name: print message
         run: 'echo Hello!'
   context_github:
-    name: Context 'githuib'
+    name: Context 'github'
     runs-on: ubuntu-latest
     needs: [ hello ]
     steps:

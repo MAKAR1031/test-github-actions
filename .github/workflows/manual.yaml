@@ -1,0 +1,32 @@
+name: Manual
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: Your name
+        required: true
+        type: string
+      firstNumber:
+        description: number 1
+        type: string
+        required: true
+      secondNumber:
+        description: number 2
+        type: string
+        required: true
+      optionalMessage:
+        description: Optional message
+        required: false
+        type: string
+jobs:
+  calculate:
+    name: Calculate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute calculations
+        run: |
+          echo Hello, ${{ inputs.name }}
+          echo Sum: ${{ inputs.firstNumber + inputs.secondNumber }}
+      - name: Optional message
+        if: ${{ inputs.optionalMessage != null }}
+        run: echo ${{ inputs.optionalMessage }}
