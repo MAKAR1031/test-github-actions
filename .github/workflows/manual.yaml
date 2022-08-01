@@ -26,7 +26,7 @@ jobs:
       - name: Execute calculations
         run: |
           echo Hello, ${{ inputs.name }}
-          echo Sum: ${{ inputs.firstNumber }} + ${{ inputs.secondNumber }}
+          echo Sum: ${{ inputs.firstNumber }} + ${{ inputs.secondNumber }} = $((${{ inputs.firstNumber }} + ${{ inputs.secondNumber }}))
       - name: Optional message
         if: inputs.optionalMessage != null
         run: echo ${{ inputs.optionalMessage }}
